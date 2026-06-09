@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Send, MessageSquare, User, ArrowRight, Phone } from 'lucide-react';
+import { Mail, MapPin, Send, MessageSquare, User, ArrowRight } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { Github, Linkedin } from '../components/SocialIcons';
 
@@ -140,30 +140,7 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Phone */}
-            <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
-              <div 
-                style={{
-                  width: '44px',
-                  height: '44px',
-                  borderRadius: '10px',
-                  backgroundColor: 'rgba(255, 255, 255, 0.02)',
-                  border: '1px solid rgba(255, 255, 255, 0.05)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  color: 'var(--primary)'
-                }}
-              >
-                <Phone size={18} />
-              </div>
-              <div>
-                <span style={{ display: 'block', fontSize: '0.75rem', color: 'var(--subtext)', textTransform: 'uppercase' }}>Phone</span>
-                <a href="tel:+917339533400" style={{ fontSize: '0.95rem', color: '#ffffff', textDecoration: 'none', transition: 'color 0.2s ease' }} onMouseEnter={(e) => e.target.style.color = 'var(--primary)'} onMouseLeave={(e) => e.target.style.color = '#ffffff'}>
-                  +91 7339533400
-                </a>
-              </div>
-            </div>
+
 
             {/* Location */}
             <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
